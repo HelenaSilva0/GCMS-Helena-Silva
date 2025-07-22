@@ -32,11 +32,17 @@ public @ResponseBody String greetingParalelo() {
 	
 }
 =======*/
-	@RequestMapping("/Paralelo")
-	public @ResponseBody String greetingParalelo() {
+@RequestMapping("/Paralelo")
+public @ResponseBody String greetingParalelo() {
 		return "Simulação de trabalho em paralelo concluída com sucesso. ";
 
 	}
 //>>>>>>> 01f028a494d535d2f4acb6542a077648a3eb4a17
+
+@RequestMapping("/hotfix")
+public @ResponseBody String greetingHotfix() {
+	return "Branch Hotfix, adicionada!";
+
+}
 
 } 

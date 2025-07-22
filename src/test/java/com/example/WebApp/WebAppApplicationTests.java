@@ -65,4 +65,14 @@ class WebAppApplicationTests {
  }
 
 //>>>>>>> 01f028a494d535d2f4acb6542a077648a3eb4a17
+
+
+ @Test
+ public void shouldReturnDefaultMessagehotfix() throws Exception {
+  this.mockMvc.perform(get("/hotfix"))
+          .andDo(print()).andExpect(status().isOk())
+          .andExpect(content()
+                  .string(containsString("Branch Hotfix, adicionada!")));
+ }
+
 }
