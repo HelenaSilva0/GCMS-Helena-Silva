@@ -41,7 +41,7 @@ public @ResponseBody String greetingParalelo() {
 
 @RequestMapping("/hotfix")
 public @ResponseBody String greetingHotfix() {
-	return "Branch Hotfix, adicionado!";
+	return "Branch Hotfix, adicionada!";
 
 }
 
