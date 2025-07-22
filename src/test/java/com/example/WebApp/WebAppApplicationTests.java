@@ -36,4 +36,12 @@ class WebAppApplicationTests {
      .string(containsString("Hello, Helena!"))); 
  } 
  
+ @Test 
+ public void shouldReturnDefaultMessagePratica3() throws Exception { 
+  this.mockMvc.perform(get("/Pratica3")) 
+    .andDo(print()).andExpect(status().isOk()) 
+    .andExpect(content() 
+     .string(containsString("Novo endpoint."))); 
+ } 
+ 
 }

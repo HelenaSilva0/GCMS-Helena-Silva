@@ -19,4 +19,10 @@ return "Hello, Helena!";
 
 } 
 
+@RequestMapping("/Pratica3")
+public @ResponseBody String greetingPratica3() {
+	return "Novo endpoint.";
+	
+}
+
 } 
