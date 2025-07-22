@@ -25,4 +25,10 @@ public @ResponseBody String greetingPratica3() {
 	
 }
 
+@RequestMapping("/Paralelo")
+public @ResponseBody String greetingParalelo() {
+	return "Simulando trabalho em paralelo no arquivo original. ";
+	
+}
+
 } 

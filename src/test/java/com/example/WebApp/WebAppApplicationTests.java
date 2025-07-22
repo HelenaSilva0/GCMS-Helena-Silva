@@ -44,4 +44,12 @@ class WebAppApplicationTests {
      .string(containsString("Novo endpoint."))); 
  } 
  
+ @Test 
+ public void shouldReturnDefaultMessageParalelo() throws Exception { 
+  this.mockMvc.perform(get("/Paralelo")) 
+    .andDo(print()).andExpect(status().isOk()) 
+    .andExpect(content() 
+     .string(containsString("Simulando trabalho em paralelo no arquivo original."))); 
+ } 
+ 
 }
