@@ -39,10 +39,16 @@ public @ResponseBody String greetingParalelo() {
 	}
 //>>>>>>> 01f028a494d535d2f4acb6542a077648a3eb4a17
 
+//<<<<<<< HEAD
 @RequestMapping("/hotfix")
 public @ResponseBody String greetingHotfix() {
 	return "Branch Hotfix, adicionada!";
+/*=======
+	@RequestMapping("/hotfix")
+	public @ResponseBody String greetingHotfix() {
+		return "Branch Hotfix, adicionado!";
+>>>>>>> hotfix*/
 
-}
+	}
 
 } 
