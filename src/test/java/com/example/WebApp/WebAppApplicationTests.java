@@ -72,7 +72,7 @@ class WebAppApplicationTests {
   this.mockMvc.perform(get("/hotfix"))
           .andDo(print()).andExpect(status().isOk())
           .andExpect(content()
-                  .string(containsString("Branch Hotfix, adicionada!")));
+                  .string(containsString("Branch Hotfix, adicionado!")));
  }
 
 }
