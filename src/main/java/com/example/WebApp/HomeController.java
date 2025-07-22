@@ -21,8 +21,14 @@ return "Hello, Helena!";
 
 @RequestMapping("/Pratica3")
 public @ResponseBody String greetingPratica3() {
-	return "Novo endpoint.";
-	
+	return "Novo endpoint. ";
+
 }
+
+	@RequestMapping("/Paralelo")
+	public @ResponseBody String greetingParalelo() {
+		return "Simulando trabalho em paralelo. ";
+
+	}
 
 } 
