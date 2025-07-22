@@ -42,14 +42,27 @@ class WebAppApplicationTests {
     .andDo(print()).andExpect(status().isOk()) 
     .andExpect(content() 
      .string(containsString("Novo endpoint."))); 
+//<<<<<<< HEAD
  } 
- 
+ /*
  @Test 
  public void shouldReturnDefaultMessageParalelo() throws Exception { 
   this.mockMvc.perform(get("/Paralelo")) 
     .andDo(print()).andExpect(status().isOk()) 
     .andExpect(content() 
      .string(containsString("Simulando trabalho em paralelo no arquivo original."))); 
- } 
+ } */
  
+//=======
+ 
+
+ @Test
+ public void shouldReturnDefaultMessageParalelo() throws Exception {
+  this.mockMvc.perform(get("/Paralelo"))
+          .andDo(print()).andExpect(status().isOk())
+          .andExpect(content()
+                  .string(containsString("Simulação de trabalho em paralelo concluída com sucesso. ")));
+ }
+
+//>>>>>>> 01f028a494d535d2f4acb6542a077648a3eb4a17
 }
